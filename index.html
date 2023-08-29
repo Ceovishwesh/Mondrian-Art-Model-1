@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Art</title>
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }    
+    .container{
+        height:400px ;
+        width: 400px;
+        display: grid;
+        background-color: black;
+        gap: 10px;
+        grid-template-rows: 140px 140px 45px 45px;
+        grid-template-columns: 100px 260px 20px;
+    }
+    .white{
+        background-color: #F0F1EC;
+    }
+    .red{
+        background-color: #E72F24;
+        grid-area: 1/1/2/2;
+    }
+    .yellow{
+        background-color: #F9D01E;
+       
+        grid-area: 1/2/3/-1;
+    }
+    .blue{
+        background-color: #004592;
+    }
+    .black{
+        background-color: #000;
+    }
+    .item6{
+        background-color: #004592;
+    }
+    .item8{
+      grid-area: 4/3/5/4;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="white item1"></div>
+        <div class="red item2"></div>
+
+        <div class="white item3"></div>
+
+        <div class="yellow item4"></div>
+        <div class="white item5"></div>
+        <div class="black item6"></div>
+        <div class="blue item7"></div>
+        <div class="white item8"></div>
+    </div>
+</body>
+</html>
